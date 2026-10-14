@@ -15,3 +15,11 @@ class Descuento(ABC):
 class SinDescuento(Descuento):
     def calcular(self, subtotal):
         return 0
+
+
+class DescuentoPorcentual(Descuento):
+    def __init__(self, porcentaje):
+        self.porcentaje = porcentaje
+
+    def calcular(self, subtotal):
+        return subtotal * self.porcentaje
