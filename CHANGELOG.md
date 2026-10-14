@@ -1,0 +1,1 @@
+## 1.0.0 - descuentos, calculadora, servicio y demo
